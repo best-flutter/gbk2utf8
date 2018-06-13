@@ -45,7 +45,7 @@ gbk2utf8: ^0.0.1
 
 完整代码在
 
->[这里]()
+>[这里](https://github.com/jzoom/gbk2utf8/blob/master/example/lib/main.dart)
 
 
 效果:
