@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="fe2dd4a6-0405-492e-935d-c873373a9756" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" afterPath="$PROJECT_DIR$/example/lib/main.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/gbk2utf8.dart" afterPath="$PROJECT_DIR$/lib/gbk2utf8.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/src/convert.dart" afterPath="$PROJECT_DIR$/lib/src/convert.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/src/gbk.dart" afterPath="$PROJECT_DIR$/lib/src/gbk.dart" />
+      <change beforePath="$PROJECT_DIR$/lib/src/unicode.dart" afterPath="$PROJECT_DIR$/lib/src/unicode.dart" />
+      <change beforePath="$PROJECT_DIR$/test/gbk2utf8_test.dart" afterPath="$PROJECT_DIR$/test/gbk2utf8_test.dart" />
     </list>
     <ignored path="$PROJECT_DIR$/.dart_tool/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -20,8 +26,8 @@
       <file leaf-file-name="main.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="46" column="0" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="282">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -53,8 +59,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="283">
-                <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+              <first_editor relative-caret-position="262">
+                <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -400,8 +406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="282">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
@@ -438,8 +444,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="283">
-            <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+          <first_editor relative-caret-position="262">
+            <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
             <folding />
           </first_editor>
           <second_editor />

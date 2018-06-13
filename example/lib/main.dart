@@ -28,17 +28,15 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  String _text="正在下载数据...";
+  String _text = "正在下载数据...";
 
   @override
   void initState() {
-
-    fetch("http://www.ysts8.com/index_hot.html").then( (data){
+    fetch("http://www.ysts8.com/index_hot.html").then((data) {
       setState(() {
         _text = data;
       });
-    }).catchError((e){
+    }).catchError((e) {
       _text = "网络异常，请检查";
     });
 
@@ -47,9 +45,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future fetch(String url) async {
     http.Response response = await http.get(url);
-    String str = decodeGbk ( response.bodyBytes );
+    String str = decodeGbk(response.bodyBytes);
     return str;
   }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

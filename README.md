@@ -7,6 +7,16 @@ A flutter package to convert gbk to utf-8
 
 # 使用方法
 
+增加依赖
+
+```
+
+gbk2utf8: ^0.0.1
+
+```
+
+编写代码
+
 ```
 
   Future fetch(String url) async {
@@ -33,7 +43,9 @@ A flutter package to convert gbk to utf-8
 
 ```
 
-完整代码在 这里
+完整代码在
+
+>[这里]()
 
 
 效果:
