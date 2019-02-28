@@ -36,7 +36,9 @@ class _MyHomePageState extends State<MyHomePage> {
       http.Response response =
           await http.get("http://www.ysts8.com/index_hot.html");
 
-      String data = decodeGbk(response.bodyBytes);
+      String data = gbk.decode(response.bodyBytes);
+      List<int> encode = gbk.encode(data);
+      print(encode);
       setState(() {
         _text = data;
       });

@@ -2,6 +2,8 @@ int unicode_first_code = 0x4E00; //19968
 int unicode_last_code = 0x9FA5; //40869;
 int unicode_buf_size = 32096;
 
+/// 本表为 gbk到unicode的转码表
+///
 List<int> unicodeTables = [
   19970,
   19972,
