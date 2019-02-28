@@ -11,7 +11,7 @@ A flutter package to convert gbk to utf-8
 
 ```
 
-gbk2utf8: ^0.0.1
+gbk2utf8: ^0.0.3
 
 ```
 
