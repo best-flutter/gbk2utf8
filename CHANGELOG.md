@@ -1,4 +1,10 @@
 
+## [1.0.1]
+
+Better document
+
+## [1.0.0]
+Change api to gbk.encode and gbk.decode
 
 ## [0.0.3]
 
