@@ -1,6 +1,6 @@
 name: gbk2utf8
 description: A flutter package to convert gbk to utf-8.
-version: 0.0.2
+version: 0.0.3
 author: JZoom <jzoom811207@gmail.com>
 homepage: https://github.com/best-flutter/gbk2utf8
 
