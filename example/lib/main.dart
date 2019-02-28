@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:gbk2utf8/gbk2utf8.dart';
 import 'package:flutter/material.dart';
@@ -30,23 +31,27 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String _text = "正在下载数据...";
 
-  @override
-  void initState() {
-    fetch("http://www.ysts8.com/index_hot.html").then((data) {
+  void download() async {
+    try {
+      http.Response response =
+          await http.get("http://www.ysts8.com/index_hot.html");
+
+      String data = decodeGbk(response.bodyBytes);
       setState(() {
         _text = data;
       });
-    }).catchError((e) {
-      _text = "网络异常，请检查";
-    });
-
-    super.initState();
+    } catch (e) {
+      setState(() {
+        _text = "网络异常，请检查";
+      });
+    }
   }
 
-  Future fetch(String url) async {
-    http.Response response = await http.get(url);
-    String str = decodeGbk(response.bodyBytes);
-    return str;
+  @override
+  void initState() {
+    download();
+
+    super.initState();
   }
 
   @override

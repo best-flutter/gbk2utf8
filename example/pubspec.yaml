@@ -11,6 +11,7 @@ dependencies:
 
   gbk2utf8:
     path: ../
+  http: any
 
 dev_dependencies:
   flutter_test:
