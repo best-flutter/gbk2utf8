@@ -5,6 +5,9 @@ A flutter package to convert gbk to utf-8
 
 现在这个版本官方的http还不能支持中文gbk的解析，这个项目就是为了解决这个问题
 
+目前这个库已经成熟，类似flutter原有的utf8编码调用，即为gbk.encode和gbk.decode这两个方法进行转化。
+如果还有不懂的地方，可以入群854192563讨论.
+
 # 使用方法
 
 增加依赖
