@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
 
   @override
@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void download() async {
     try {
       http.Response response =
-          await http.get("http://www.ysts8.com/index_hot.html");
+          await http.get(Uri.dataFromString("http://www.ysts8.com/index_hot.html"));
       String data = gbk.decode(response.bodyBytes);
       setState(() {
         _text = data;
