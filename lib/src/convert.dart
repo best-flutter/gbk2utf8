@@ -40,7 +40,7 @@ class GbkCodec extends Encoding {
 
 int unicode2gbkOne(int unicode) {
 
-  int offset;
+  int offset=-1;
 
   if (unicode <= 0x9FA5)
     offset = unicode - 0x4E00;
@@ -84,7 +84,7 @@ List<int> gbk2unicode(List<int> gbk_buf) {
   int ch;
   int word; //unsigned short
   int word_pos;
-  List<int> uni_ptr = new List()..length = gbk_buf.length;
+  List<int> uni_ptr =List .filled(gbk_buf.length, 0, growable: true);
 
   for (; gbk_ind < gbk_buf.length;) {
     ch = gbk_buf[gbk_ind];
@@ -146,7 +146,7 @@ List<int> utf82unicode(List<int> bytes) {
 ///Word array to utf-8
 List<int> unicode2utf8(List<int> wordArray) {
   // a utf-8 character is 3 bytes
-  List<int> list = new List()..length = wordArray.length * 3;
+  List<int> list =List .filled(wordArray.length * 3, 0, growable: true);
   int pos = 0;
 
   for (int i = 0, c = wordArray.length; i < c; ++i) {
